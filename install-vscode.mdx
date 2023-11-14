@@ -1,0 +1,52 @@
+---
+title: "Installing Visual Studio Code on Android: A Step-by-Step Guide"
+date :'2023-11-16'
+tag:['how to install vs code','hi bhai ji']
+---
+
+# Installing Visual Studio Code on Android: A Step-by-Step Guide
+
+Are you a coding enthusiast who wants to take the power of Visual Studio Code on the go? Well, you're in luck! With the advancement of technology, it's now possible to install Visual Studio Code on your Android device. In this step-by-step guide, we'll walk you through the process, making it easy for you to code anytime, anywhere.
+<Video id="23456hEB">
+## Step 1: Prepare Your Android Device
+
+Before we dive into the installation process, ensure that your Android device is connected to a stable Wi-Fi network. This is crucial for a seamless download and installation.
+
+## Step 2: Download Termux from the Play Store
+
+Termux is a powerful terminal emulator for Android that provides a Linux-like environment. Head over to the Google Play Store and search for "Termux." Install the app on your Android device.
+
+## Step 3: Open Termux and Update Packages
+
+Launch Termux and update the package list using the following command:
+
+```bash
+pkg update && pkg upgrade
+```
+
+This ensures that you have the latest packages needed for the installation.
+
+## Install VS Code
+Now comes the exciting part – installing Visual Studio Code! Use the following commands in Termux:
+
+```bash
+
+
+pkg install wget
+wget https://github.com/cdr/code-server/releases/download/v3.10.2/code-server-3.10.2-linux-arm64.tar.gz
+```
+```bash
+tar -xvzf code-server-3.10.2-linux-arm64.tar.gz
+cd code-server-3.10.2-linux-arm64
+./code-server
+
+```
+This will download and install VS Code on your Android device.
+
+## Access VS Code in Your Browser
+Once the installation is complete, open your browser and go to http://localhost:8080. You will see the Visual Studio Code interface right in your browser!
+
+## Optional - Customize Settings
+Feel free to customize your VS Code settings and extensions based on your preferences. You can explore the Extensions marketplace and install the ones you need for your coding projects.
+
+And there you have it – Visual Studio Code up and running on your Android device! Whether you want to quickly edit code snippets or embark on a coding marathon, you now have a powerful coding tool in the palm of your hand. Happy coding on the go! 🚀

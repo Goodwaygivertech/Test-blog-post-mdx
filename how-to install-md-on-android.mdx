@@ -1,0 +1,69 @@
+---
+title: "Step-by-Step Guide: Installing MongoDB on Your Android Phone"
+date :'2023-11-15'
+tag:['how to install vs code','hi bhai ji']
+---
+
+# Step-by-Step Guide: Installing MongoDB on Your Android Phone
+
+Hey there, Android enthusiasts! Ever wondered if you could have MongoDB, a powerful and flexible database, right on your Android phone? Well, wonder no more! We've got a simple step-by-step guide for you to install MongoDB on your Android device. Let's dive in:
+<Video id="23456hiEER">
+
+## Step 1: Prepare Your Android Phone
+<Video id="23456hiFB">
+Ensure your Android phone is connected to a stable Wi-Fi network. This is crucial for a smooth installation process.
+
+## Step 2: Download Termux App
+
+Head over to the Google Play Store and search for "Termux." Install this handy terminal emulator app on your Android device. It will be your go-to tool for installing MongoDB.
+
+## Step 3: Open Termux and Update Packages
+
+```bash
+pkg update && pkg upgrade
+
+```
+
+```bash
+pkg install mongodb
+```
+
+<CustomImage src="./images/gwgshop.png" alt="hi gwg shop">
+
+Wait for the installation to complete. This might take a few minutes, depending on your internet speed.
+
+## Step 5: Start MongoDB Server
+
+Once the installation is done, start the MongoDB server with this command:
+
+```bash
+mongod
+```
+
+
+You've just initiated the MongoDB server on your Android phone!
+
+## Step 6: Access MongoDB Shell
+
+To interact with MongoDB, open a new Termux window and enter the MongoDB shell:
+
+```bash
+mongo
+```
+
+Congratulations! You are now connected to your MongoDB server on your Android phone.
+
+## Test Your MongoDB Installation
+Create a test database and collection to make sure everything is working:
+
+```Bash
+use testdb
+db.testcollection.insert({ message: "Hello, MongoDB on Android!" })
+db.testcollection.find()
+```
+
+If you see the message you inserted, congratulations! MongoDB is up and running on your Android device.
+
+There you have it – MongoDB on your Android phone! Feel free to explore the vast world of MongoDB databases right from your pocket. Happy coding! 🚀.
+
+
